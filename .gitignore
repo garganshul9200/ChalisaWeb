@@ -1,18 +1,50 @@
-# This .gitignore is appropriate for repositories deployed to GitHub Pages and using
-# a Gemfile as specified at https://github.com/github/pages-gem#conventional
+### Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+firebase-debug.log*
+firebase-debug.*.log*
 
-# Basic Jekyll gitignores (synchronize to Jekyll.gitignore)
-_site/
-.sass-cache/
-.jekyll-cache/
-.jekyll-metadata
+### Firebase cache
+.firebase/
 
-# Additional Ruby/bundler ignore for when you run: bundle install
-/vendor
+### Firebase config
+# Uncomment this if you'd like others to create their own Firebase project.
+# For a team working on the same Firebase project(s), it is recommended to leave
+# it commented so all members can deploy to the same project(s) in .firebaserc.
+# .firebaserc
 
-# Specific ignore for GitHub Pages
-# GitHub Pages will always use its own deployed version of pages-gem 
-# This means GitHub Pages will NOT use your Gemfile.lock and therefore it is
-# counterproductive to check this file into the repository.
-# Details at https://github.com/github/pages-gem/issues/768
-Gemfile.lock
+### Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+### Test coverage / tooling
+lib-cov
+coverage
+.nyc_output
+.grunt
+
+### Frontend / Node dependencies & builds
+bower_components
+node_modules/
+build/
+dist/
+
+### Package manager / tooling outputs
+.lock-wscript
+.npm
+.eslintcache
+*.tgz
+.yarn-integrity
+
+### Environment / secrets
+.env
+.env.*
+
+### Misc
+.dataconnect
+.DS_Store

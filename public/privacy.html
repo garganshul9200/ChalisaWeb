@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Privacy Policy – Chalisa Sangrah</title>
+    <meta
+      name="description"
+      content="Privacy policy for Chalisa Sangrah – learn how we handle your data and what choices you have."
+    />
+    <style>
+      :root {
+        --bg: #f5e6d3;
+        --bg-light: #faf0e6;
+        --bg-dark: #e8d5b7;
+        --card: #fff8f0;
+        --border: #d4a574;
+        --shadow: rgba(62, 39, 35, 0.08);
+        --text-main: #3e2723;
+        --text-muted: #5d4037;
+        --accent: #8b4513;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+          sans-serif;
+        background: radial-gradient(circle at top, var(--bg-light) 0, var(--bg) 55%);
+        color: var(--text-main);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+      }
+
+      a {
+        color: var(--accent);
+        text-decoration: none;
+      }
+
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .shell {
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 1.5rem 1.25rem 2.5rem;
+        width: 100%;
+      }
+
+      header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1.5rem;
+        padding: 0.5rem 0 1.25rem;
+      }
+
+      .brand {
+        display: flex;
+        align-items: center;
+        gap: 0.75rem;
+      }
+
+      .brand-mark {
+        width: 40px;
+        height: 40px;
+        border-radius: 12px;
+        background: var(--bg-dark);
+        border: 1px solid var(--border);
+        box-shadow: 0 4px 10px var(--shadow);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 700;
+        color: var(--accent);
+        letter-spacing: 1px;
+      }
+
+      .brand-text h1 {
+        margin: 0;
+        font-size: 1.25rem;
+        letter-spacing: 0.03em;
+      }
+
+      .brand-text span {
+        display: block;
+        margin-top: 2px;
+        font-size: 0.8rem;
+        color: var(--text-muted);
+      }
+
+      nav {
+        display: flex;
+        gap: 1.25rem;
+        font-size: 0.9rem;
+      }
+
+      nav a {
+        color: var(--text-muted);
+        text-decoration: none;
+        position: relative;
+        padding-bottom: 2px;
+      }
+
+      nav a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        width: 0;
+        height: 2px;
+        background: var(--accent);
+        transition: width 0.16s ease-out;
+      }
+
+      nav a:hover {
+        color: var(--text-main);
+      }
+
+      nav a:hover::after {
+        width: 100%;
+      }
+
+      main {
+        flex: 1;
+      }
+
+      .page-card {
+        background: var(--card);
+        border-radius: 1rem;
+        border: 1px solid var(--border);
+        box-shadow: 0 8px 18px var(--shadow);
+        padding: 1.4rem 1.3rem;
+      }
+
+      .page-title {
+        margin: 0 0 0.4rem;
+        font-size: 1.4rem;
+      }
+
+      .page-subtitle {
+        margin: 0 0 1.1rem;
+        font-size: 0.9rem;
+        color: var(--text-muted);
+      }
+
+      h2 {
+        margin: 1.4rem 0 0.4rem;
+        font-size: 1.05rem;
+      }
+
+      p {
+        margin: 0 0 0.7rem;
+        font-size: 0.9rem;
+        line-height: 1.5;
+        color: var(--text-main);
+      }
+
+      ul {
+        margin: 0.1rem 0 0.8rem 1.2rem;
+        padding: 0;
+        font-size: 0.9rem;
+        color: var(--text-main);
+      }
+
+      li + li {
+        margin-top: 0.25rem;
+      }
+
+      footer {
+        margin-top: 1.3rem;
+        padding-top: 1.1rem;
+        border-top: 1px solid rgba(212, 165, 116, 0.7);
+        font-size: 0.78rem;
+        color: var(--text-muted);
+      }
+
+      .footer-top {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 0.75rem;
+        margin-bottom: 0.6rem;
+      }
+
+      .footer-links {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.9rem;
+        align-items: center;
+      }
+
+      .footer-links a {
+        color: var(--text-muted);
+      }
+
+      .footer-links a:hover {
+        color: var(--text-main);
+      }
+
+      .footer-meta {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .badge-store {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.35rem;
+        padding: 0.2rem 0.55rem;
+        border-radius: 999px;
+        border: 1px solid rgba(212, 165, 116, 0.8);
+        background: var(--bg-light);
+        font-size: 0.68rem;
+      }
+
+      @media (max-width: 720px) {
+        header {
+          flex-direction: column;
+          align-items: flex-start;
+        }
+
+        nav {
+          width: 100%;
+          justify-content: flex-start;
+          overflow-x: auto;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="shell">
+      <header>
+        <div class="brand">
+          <div class="brand-mark" aria-hidden="true">॥</div>
+          <div class="brand-text">
+            <h1>Chalisa Sangrah</h1>
+            <span>Read &amp; recite popular Hindi Chalisas</span>
+          </div>
+        </div>
+        <nav aria-label="Primary">
+          <a href="/index.html">Home</a>
+          <a href="/privacy.html">Privacy</a>
+          <a href="/terms.html">Terms</a>
+        </nav>
+      </header>
+
+      <main>
+        <article class="page-card">
+          <h1 class="page-title">Privacy Policy</h1>
+          <p class="page-subtitle">
+            This page explains how the Chalisa Sangrah Android app handles your
+            data and what choices you have.
+          </p>
+
+          <p><strong>Last updated:</strong> 10 March 2026</p>
+
+          <h2>1. Overview</h2>
+          <p>
+            Chalisa Sangrah is a simple app to read and recite Hindu Chalisas in
+            Hindi. We do not ask you to create an account or provide personal
+            details to use the core features of the app.
+          </p>
+
+          <h2>2. Information we collect</h2>
+          <p>
+            The app itself does not require you to enter your name, email, or
+            similar personal details. However, certain technical information may
+            be collected automatically:
+          </p>
+          <ul>
+            <li>
+              Anonymous usage data (such as screens viewed, basic device
+              information, and app version) to help us understand how the app is
+              used and improve stability and performance.
+            </li>
+            <li>
+              Crash logs and error reports, which may include non-identifying
+              technical data about your device and operating system.
+            </li>
+            <li>
+              Data collected by third‑party services such as Google AdMob in
+              connection with showing ads in the app.
+            </li>
+          </ul>
+
+          <h2>3. Advertising and third‑party services</h2>
+          <p>
+            Chalisa Sangrah uses Google AdMob to display ads. AdMob may collect
+            and process data in accordance with Google's own policies, including
+            for ad personalisation and measurement.
+          </p>
+          <p>
+            For details on how Google handles data in its advertising products,
+            please refer to Google's privacy policy and your Google account ad
+            settings.
+          </p>
+
+          <h2>4. How we use data</h2>
+          <ul>
+            <li>To fix crashes and improve the stability of the app.</li>
+            <li>
+              To understand which devices, screen sizes, and Android versions we
+              should support.
+            </li>
+            <li>
+              To show and manage ads in compliance with our advertising
+              partners’ policies.
+            </li>
+          </ul>
+          <p>
+            We do <strong>not</strong> sell your personal information to third
+            parties.
+          </p>
+
+          <h2>5. Your choices</h2>
+          <ul>
+            <li>
+              You can uninstall the app at any time to stop all further data
+              collection from your device by Chalisa Sangrah.
+            </li>
+            <li>
+              You can manage ad personalisation from your Google account and
+              Android system settings.
+            </li>
+          </ul>
+
+          <h2>6. Children’s privacy</h2>
+          <p>
+            Chalisa Sangrah is a devotional app intended for a general audience.
+            We do not knowingly collect personal information from children. If
+            you are a parent or guardian and believe your child has provided us
+            with personal information, please contact us so we can review and
+            address the situation.
+          </p>
+
+          <h2>7. Changes to this policy</h2>
+          <p>
+            We may update this privacy policy from time to time. When we make
+            changes, we will update the “Last updated” date at the top of this
+            page. We recommend that you review this page periodically to stay
+            informed about how we protect your data.
+          </p>
+
+          <h2>8. Contact us</h2>
+          <p>
+            If you have any questions about this privacy policy or how your data
+            is handled, please contact us:
+          </p>
+          <p>
+            Email:
+            <a href="mailto:anshuwebnetwork@gmail.com"
+              >anshuwebnetwork@gmail.com</a
+            >
+          </p>
+        </article>
+      </main>
+
+      <footer>
+        <div class="footer-top">
+          <div class="footer-links" aria-label="Footer links">
+            <a href="/index.html">Home</a>
+            <a href="/privacy.html">Privacy policy</a>
+            <a href="/terms.html">Terms &amp; conditions</a>
+            <a href="/app-ads.txt" target="_blank" rel="noopener noreferrer"
+              >app-ads.txt</a
+            >
+          </div>
+          <a
+            class="badge-store"
+            href="https://play.google.com/store/apps/details?id=com.allchalisaapp"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <span>Available on</span>
+            <strong>Google Play</strong>
+          </a>
+        </div>
+        <div class="footer-meta">
+          <span
+            >© <span id="year"></span> Chalisa Sangrah. All rights
+            reserved.</span
+          >
+          <span>Made with care for daily paath.</span>
+        </div>
+      </footer>
+    </div>
+
+    <script>
+      (function () {
+        const yearEl = document.getElementById("year");
+        if (yearEl) {
+          yearEl.textContent = new Date().getFullYear();
+        }
+      })();
+    </script>
+  </body>
+</html>
+

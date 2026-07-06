@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Chalisa Sangrah – Hindi Chalisa Collection</title>
+    <title>Chalisa Sangrah – 32 Hindi Chalisas with Audio</title>
     <meta
       name="description"
-      content="Chalisa Sangrah is a simple, calm app to read popular Hindu Chalisas in clean Hindi text – Hanuman Chalisa, Durga Chalisa, Shiv Chalisa and more."
+      content="Chalisa Sangrah is a calm Android app to read and listen to 32 popular Hindu Chalisas offline – Hanuman, Shiv, Durga, Ganesh and more. Favorites, Hindi/English, light/dark theme."
     />
 
     <style>
@@ -403,6 +403,28 @@
         color: var(--text-muted);
       }
 
+      .chalisa-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        gap: 0.5rem;
+        margin-top: 0.75rem;
+      }
+
+      .chalisa-chip {
+        padding: 0.45rem 0.65rem;
+        border-radius: 0.6rem;
+        background: var(--bg-light);
+        border: 1px solid rgba(212, 165, 116, 0.7);
+        font-size: 0.78rem;
+        color: var(--text-muted);
+        text-align: center;
+      }
+
+      .chalisa-chip.has-audio::after {
+        content: " ♪";
+        color: var(--accent);
+      }
+
       footer {
         margin-top: 1rem;
         padding-top: 1.1rem;
@@ -504,6 +526,8 @@
         </div>
         <nav aria-label="Primary">
           <a href="#about">About</a>
+          <a href="#features">Features</a>
+          <a href="#chalisas">Chalisas</a>
           <a href="#contact">Contact</a>
           <a href="/privacy.html">Privacy</a>
           <a href="/terms.html">Terms</a>
@@ -518,18 +542,19 @@
               <span>Chalisa Sangrah App</span>
             </div>
             <h2 class="hero-title">
-              A calm space to recite your favourite <span>Chalisas</span>.
+              Read &amp; listen to <span>32 Chalisas</span> in one calm app.
             </h2>
             <p class="hero-subtitle">
               Chalisa Sangrah brings together popular Hindu Chalisas in clean,
-              easy-to-read Hindi text so that you can focus on paath – without
-              distractions, heavy ads, or complicated menus.
+              easy-to-read Hindi text with optional audio playback, favorites,
+              and a clutter-free interface — so you can focus on paath without
+              distractions.
             </p>
             <ul class="hero-list">
-              <li>Hanuman, Shiv, Durga and more Chalisas</li>
-              <li>Offline-friendly reading experience</li>
-              <li>Simple, clutter-free interface</li>
-              <li>Designed for daily paath &amp; aarti</li>
+              <li>32 Chalisas — Ganesh, Hanuman, Shiv, Durga &amp; more</li>
+              <li>Offline reading with adjustable font size</li>
+              <li>Audio playback with mini player &amp; lock-screen controls</li>
+              <li>Favorites, search, Hindi/English &amp; light/dark theme</li>
             </ul>
             <div class="hero-actions">
               <!-- Replace the # with your real Play Store link when ready -->
@@ -550,41 +575,136 @@
           <aside class="device-card" aria-hidden="true">
             <div class="device-inner">
               <div class="device-status">
-                <span>Today • Evening paath</span>
+                <span>Now playing • Background audio</span>
                 <div class="device-chip">
                   <span class="device-chip-dot"></span>
-                  <span>Reading mode</span>
+                  <span>Listen mode</span>
                 </div>
               </div>
               <div>
-                <p class="device-title">Hanuman Chalisa</p>
+                <p class="device-title">Shri Hanuman Chalisa</p>
                 <p class="device-subtitle">
-                  Clean, high-contrast text for comfortable recitation.
+                  Read, listen, or save to favourites — all in one place.
                 </p>
                 <ul class="device-list">
                   <li>
-                    <span>Durga Chalisa</span>
-                    <span class="device-pill">Next</span>
+                    <span>Shri Shiv Chalisa</span>
+                    <span class="device-pill">♪ Audio</span>
                   </li>
                   <li>
-                    <span>Shiv Chalisa</span>
+                    <span>Shri Durga Chalisa</span>
                     <span class="device-pill">Favourites</span>
                   </li>
                   <li>
-                    <span>Ganesh Chalisa</span>
-                    <span class="device-pill">Morning</span>
+                    <span>Shri Ganesh Chalisa</span>
+                    <span class="device-pill">Offline</span>
                   </li>
                 </ul>
                 <div class="device-footer">
                   <div class="pill">
                     <span class="pill-dot"></span>
-                    <span>Minimal ads • smooth reading</span>
+                    <span>Search • A+ / A− • Report issue</span>
                   </div>
                   <span>Chalisa Sangrah</span>
                 </div>
               </div>
             </div>
           </aside>
+        </section>
+
+        <section class="section" id="features">
+          <h2 class="section-title">App features</h2>
+          <p class="section-subtitle">
+            Built for daily paath — offline-first reading with thoughtful extras.
+          </p>
+          <div class="section-grid">
+            <div class="section-card">
+              <h3>Offline reading</h3>
+              <p>
+                All 32 Chalisas are bundled locally. Read anytime without an
+                internet connection. Adjust font size with A+ / A− for comfortable
+                recitation.
+              </p>
+            </div>
+            <div class="section-card">
+              <h3>Audio playback</h3>
+              <p>
+                Listen to Chalisas with background playback, a persistent mini
+                player, and lock-screen controls. Audio streams when available —
+                text always works offline.
+              </p>
+            </div>
+            <div class="section-card">
+              <h3>Favourites &amp; search</h3>
+              <p>
+                Save your go-to Chalisas with a tap. Search the full collection
+                from the home screen and jump straight to what you need.
+              </p>
+            </div>
+            <div class="section-card">
+              <h3>Hindi / English</h3>
+              <p>
+                Toggle between Hindi and English for the app interface. Chalisa
+                text is available in both languages.
+              </p>
+            </div>
+            <div class="section-card">
+              <h3>Light &amp; dark theme</h3>
+              <p>
+                Switch between warm light and calm dark themes — matched to the
+                same palette you see on this site.
+              </p>
+            </div>
+            <div class="section-card">
+              <h3>Report an issue</h3>
+              <p>
+                Found a text error or missing verse? Report it directly from any
+                Chalisa detail screen so we can review and improve the content.
+              </p>
+            </div>
+          </div>
+        </section>
+
+        <section class="section" id="chalisas">
+          <h2 class="section-title">32 Chalisas included</h2>
+          <p class="section-subtitle">
+            A complete collection for daily devotion. Chalisas marked with ♪
+            include streaming audio.
+          </p>
+          <div class="chalisa-grid">
+            <span class="chalisa-chip has-audio">Shri Ganesh Chalisa</span>
+            <span class="chalisa-chip has-audio">Shri Shiv Chalisa</span>
+            <span class="chalisa-chip has-audio">Shri Hanuman Chalisa</span>
+            <span class="chalisa-chip has-audio">Shri Durga Chalisa</span>
+            <span class="chalisa-chip has-audio">Shri Laxmi Chalisa</span>
+            <span class="chalisa-chip has-audio">Shri Shani Chalisa</span>
+            <span class="chalisa-chip has-audio">Shri Ram Chalisa</span>
+            <span class="chalisa-chip has-audio">Shri Saraswati Chalisa</span>
+            <span class="chalisa-chip">Shri Ramdev Chalisa</span>
+            <span class="chalisa-chip">Shri Gayatri Chalisa</span>
+            <span class="chalisa-chip">Shri Tulsi Chalisa</span>
+            <span class="chalisa-chip">Shri Kuber Chalisa</span>
+            <span class="chalisa-chip">Shri Krishna Chalisa</span>
+            <span class="chalisa-chip">Shri Radha Chalisa</span>
+            <span class="chalisa-chip">Shri Kaal Bhairav Chalisa</span>
+            <span class="chalisa-chip">Shri Vishnu Chalisa</span>
+            <span class="chalisa-chip">Shri Sai Chalisa</span>
+            <span class="chalisa-chip">Shri Navgrah Chalisa</span>
+            <span class="chalisa-chip">Shri Ganga Chalisa</span>
+            <span class="chalisa-chip">Shri Khatu Shyam Chalisa</span>
+            <span class="chalisa-chip">Shri Kaali Mata Chalisa</span>
+            <span class="chalisa-chip">Shri Santoshi Mata Chalisa</span>
+            <span class="chalisa-chip">Shri Shitla Mata Chalisa</span>
+            <span class="chalisa-chip">Shri Vindhyeshwari Chalisa</span>
+            <span class="chalisa-chip">Shri Mahakali Chalisa</span>
+            <span class="chalisa-chip">Shri Parvati Mata Chalisa</span>
+            <span class="chalisa-chip">Shri Bagalamukhi Chalisa</span>
+            <span class="chalisa-chip">Shri Annapurna Chalisa</span>
+            <span class="chalisa-chip">Shri Surya Chalisa</span>
+            <span class="chalisa-chip">Shri Vaishno Devi Chalisa</span>
+            <span class="chalisa-chip">Shri Bhagavad Gita Chalisa</span>
+            <span class="chalisa-chip">Shri Brahma Chalisa</span>
+          </div>
         </section>
 
         <section class="section" id="contact">
@@ -610,14 +730,11 @@
             <div class="section-card">
               <h3>Bug reports &amp; ideas</h3>
               <p>
-                If something in the app is not working as expected or you would
-                like us to add a new feature, please include as many details as
-                possible in your email.
-              </p>
-              <small>
-                Screenshots, device model and Android version are especially
+                Use the in-app “Report Issue” button on any Chalisa detail
+                screen, or email us directly. Include as many details as possible
+                — screenshots, device model and Android version are especially
                 helpful.
-              </small>
+              </p>
             </div>
           </div>
         </section>
@@ -627,6 +744,8 @@
         <div class="footer-top">
           <div class="footer-links" aria-label="Footer links">
             <a href="#about">Home</a>
+            <a href="#features">Features</a>
+            <a href="#chalisas">Chalisas</a>
             <a href="#contact">Contact</a>
             <a href="/privacy.html">Privacy policy</a>
             <a href="/terms.html">Terms &amp; conditions</a>
